@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:context=".DataActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:hint="Student Name"
+        android:textColorHint="#000000"
+        app:hintTextColor="#1D46FF"
+        android:layout_marginHorizontal="14dp"
+        app:boxStrokeColor="#1D46FF">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:hint="Student ID Number"
+        android:textColorHint="#000000"
+        app:hintTextColor="#1D46FF"
+        android:layout_marginHorizontal="14dp"
+        app:boxStrokeColor="#1D46FF">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/numberText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:hint="Class Name"
+        android:textColorHint="#000000"
+        app:hintTextColor="#1D46FF"
+        android:layout_marginHorizontal="14dp"
+        app:boxStrokeColor="#1D46FF">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/classText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/squareBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#1D46FF"
+        android:layout_marginHorizontal="14dp"
+        style="@style/primaryBtn"
+        android:textColor="#FFFFFF"
+        android:text="Save" />
+
+
+</LinearLayout>
